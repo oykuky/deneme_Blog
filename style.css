@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Herr+Von+Muellerhoff&display=swap');
- /* ctrl+k ctrl+c  */
+
 /* reset kodları before after*/
 *,
 *::before,
@@ -20,7 +20,7 @@ a:visited{
    border: none;
 }
 
-u1,
+ul,
 li{
    list-style: none;
    margin: 0;
@@ -66,7 +66,7 @@ p{
    padding-bottom: 6px;
 }
 
-u1{
+ul{
    display: flex ;
 }
  
@@ -187,8 +187,8 @@ h3{
    display: flex;
    align-items: center;
    justify-content: space-around;
-   
- }
+   flex-wrap: wrap;
+   }
 
  .about-img {
    width: 45%;
@@ -245,7 +245,7 @@ h3{
    width: 100%;
    height: 100%;
    object-fit: cover;
-
+   transition: .5s;
 }
 
 .overlay{
@@ -261,8 +261,7 @@ h3{
    display: flex;
    justify-content: center;
    align-items: center;
-   transition: .9s ;
-
+   transition: .5s ;
 }
 
 .port-item:hover .overlay{
@@ -270,4 +269,154 @@ h3{
 }
 .port-item:hover img{
    transform: scale(1.1);
+}
+
+/*CONTACT*/
+.contact{
+    padding:10px 0;
+}
+.contact h2{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: #e27312;
+  font-size: 30px;
+  font-weight:600 ;
+}
+
+.contact h2::after{
+    content:"";
+    width: 75px;
+    height: 3px;
+    background-color: #e27312;
+    margin: 0 auto;
+    display: block;
+    margin-top: 13px;
+}
+
+.contact-content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.contact-item{
+    display: flex;
+    align-items: center;
+    flex-basis: 33%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+.contact-item i{
+    font-size: 26px;
+    margin-bottom: 34px;
+    color: #e89852;
+}
+
+.contact-item p{
+    font-size: 15px;
+    line-height: 12px;
+}
+
+/* FOOTER */
+.footer h2{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #e27312;
+    font-size: 33px;
+    font-weight:600 ;
+    padding: 56px;
+  }
+  
+  .footer h2::after{
+      content:"";
+      width: 75px;
+      height: 3px;
+      background-color: #543113;
+      margin: 0 auto;
+      display: block;
+      margin-top: 13px;
+  }
+  .footer{
+   background-color: #543113;
+  }
+  .footer-copyright{
+   color: beige;
+   text-align: center;
+   flex-basis: 56%;
+   font-size: 18px;
+   margin-bottom: 26px;
+  }
+  .footer-content{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+  .footer-social{
+    color: aliceblue;
+    margin-bottom: 45px;
+    font-size: 26px;
+    padding: 0 45px;
+}
+#menu{
+   font-size: 24px;
+   display: none;
+   margin-left: 22px;
+}
+/* MENU */
+@media only screen and (max-width:800px){
+  .header-menu ul{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   position: absolute;
+   top: 100px;
+   left: 0px;
+   background-color: #7a4c24;
+   width: 100%;
+   overflow:hidden;
+   transition: max-height .5s;
+  }
+  .header-menu ul li{
+   margin-right: 50px;
+   margin-top: 6px;
+   margin-bottom: 6px;
+  }
+  .header-menu ul li a{
+   color: aliceblue;
+  }
+  .header-menu #menu{
+   display: block;
+   cursor: pointer;
+}
+}
+
+/* ABOUT */
+@media only screen and (max-width:990px){
+   .about-img{
+      width: 100%;
+      margin-bottom: 25px;
+   }
+   .about-text{
+      width: 100%;
+   }
+}
+
+/* PORFOLİO */
+@media only screen and (max-width:990px){
+   .port .port-item{
+      flex-basis: 50%;
+   }
+}
+
+@media only screen and (max-width:800px){
+   .contact-content{
+      flex-direction: column;
+   }
+   .content-item{
+      margin-top: 25px;
+   }
 }

@@ -5,9 +5,12 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
    <title>Blog Site</title>
+   <script src="https://unpkg.com/scrollreveal"></script>
    <link rel="stylesheet" href="style.css">
-   
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
 </head>
+
 <body>
   <!--HEADER START -->
   <header id="header">
@@ -18,12 +21,13 @@
                 <h2><b>DESSERT</b></h2>
             </div>
               <div class="header-menu">
-                <u1>
+                <ul id="menuItems">
                   <li><a href="#"><b>Home</b></a></li>
                   <li><a href="#"><b>About</b></a></li>
                   <li><a href="#"><b>Discover</b></a></li>
                   <li><a href="#"><b>Contact</b></a></li>
-                </u1>
+                </ul>
+                <i class="material-icons" onclick="menuToggle();">menu</i>
               </div>
          </div>
              <div class="header-text">
@@ -36,9 +40,7 @@
   </header>
 <!-- HEADER FİNİSH -->
 
-
 <!-- ABOUT START -->
-
 <section id="about">
   <div class="about">
       <div class="container">
@@ -46,10 +48,10 @@
           <h2>ABOUT</h2>
         </div>
         <div class="about-content">
-            <div class="about-img">
+            <div class="about-img anime-left">
               <img src="about.jpg"  alt="Cafe.img">
             </div>
-            <div class="about-text">
+            <div class="about-text anime-right">
               <h4>My Story</h4>
               <div id="icon">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -62,83 +64,68 @@
         </div>
       </div>
   </div>
-
 </section>
-
-
-
 <!-- ABOUT FİNİSH -->
 
 <!-- PORTFOLİO START -->
-
 <section id="port">
   <div class="port">
-      <div class="port-item">
+      <div class="port-item an1">
         <img src="cookie.jpg" alt="">
           <div class="overlay">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <i class="material-icons">favorite</i>
           </div>
       </div>
 
-      <div class="port-item">
+      <div class="port-item an2">
         <img src="cupcake.jpg" alt="">
           <div class="overlay">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-            <i class="material-icons">favorite</i>
+           <i class="material-icons">favorite</i>
           </div>
       </div>
 
-      <div class="port-item">
+      <div class="port-item an3">
         <img src="donat.jpg" alt="">
         <div class="overlay">
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
           <i class="material-icons">favorite</i>
         </div>
       </div>
       
-      <div class="port-item">
+      <div class="port-item an4">
         <img src="chcake.jpg" alt="">
           <div class="overlay">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <i class="material-icons">favorite</i>
           </div>
       </div>
 
-      <div class="port-item">
+      <div class="port-item an5">
         <img src="cup.jpg" alt="">
           <div class="overlay">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-            <i class="material-icons">favorite</i>
+           <i class="material-icons">favorite</i>
           </div>
       </div>
 
-      <div class="port-item">
+      <div class="port-item an6">
         <img src="icecream.jpg" alt="">
           <div class="overlay">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <i class="material-icons">favorite</i>
           </div>
       </div>
 
-      <div class="port-item">
+      <div class="port-item an7">
         <img src="de.jpg" alt="">
           <div class="overlay">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <i class="material-icons">favorite</i>
           </div>
       </div>
 
-      <div class="port-item">
+      <div class="port-item an8">
         <img src="dess.jpg" alt="">
           <div class="overlay">
-            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
             <i class="material-icons">favorite</i>
           </div>
-        
       </div>
   </div>
-
 </section>
 
 <!-- DİSCOVER START -->
@@ -149,10 +136,10 @@
           <h2>DİSCOVER</h2>
         </div>
         <div class="about-content">
-            <div class="about-img">
+            <div class="about-img anime-left">
               <img src="discover.jpg"  alt="Cafe.img">
             </div>
-            <div class="about-text">
+            <div class="about-text anime-right">
               <h4>My Story</h4>
               <div id="icon">
                 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -165,16 +152,119 @@
         </div>
       </div>
   </div>
-
 </section>
-
 <!-- DİSCOVER FİNİSH -->
 
-
 <!-- CONTACT START  -->
+<section id="contact">
+    <div class="contact">
+        <div class="container">
+            <div class="page-title">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="contact-content"> 
+                  <div class="contact-item anime-top">
+                        <i class="material-icons">phone</i>
+                        <p>0504 342 23**</p>
+                        <br>
+                        <p>0212 345 54**</p>
+                  </div>   
 
+                  <div class="contact-item anime-bottom">
+                        <i class="material-icons">location</i>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil reiciendis veniam?</p>  
+                  </div>
 
+                  <div class="contact-item anime-top">
+                        <i class="material-icons">mail</i>
+                        <p>tressa@gmail.com</p>
+                  </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- CONTACT FİNİSH   -->
+
+<!-- FOOTER START -->
+<footer id="footer">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="page-title">
+                <h2>ABOUT US</h2>
+            </div>
+            <div class="footer-copright">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <br>
+            </div>
+            <nav class="footer-social">
+                <ul>
+                    <li>
+                        <a href="#"><i class="material-icons">facebook</i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER FİNİSH 1.33-->
+
+<script>
+  window.sr=ScrollReveal();
+
+  sr.reveal('.anime-left',{
+    origin:'left',
+    duration:1000,
+    distance:'25rem',
+    delay:300
+  });
+  sr.reveal('.anime-right',{
+    origin:'right',
+    duration:1000,
+    distance:'25rem',
+    delay:500
+  });
+  sr.reveal('.anime-top',{
+    origin:'top',
+    duration:1000,
+    distance:'25rem',
+    delay:600
+  });
+  sr.reveal('.anime-bottom',{
+    origin:'bottom',
+    duration:1000,
+    distance:'25rem',
+    delay:600
+  });
+
+</script>
+
+<script>
+  ScrollReveal().reveal('.an1',{delay:250});
+  ScrollReveal().reveal('.an2',{delay:500});
+  ScrollReveal().reveal('.an3',{delay:750});
+  ScrollReveal().reveal('.an4',{delay:1000});
+  ScrollReveal().reveal('.an5',{delay:1250});
+  ScrollReveal().reveal('.an6',{delay:1500});
+  ScrollReveal().reveal('.an7',{delay:1750});
+  ScrollReveal().reveal('.an8',{delay:2000});
+</script>
+
+<script>
+  var menuItems=document.getElementById('menuItems');
+  menuItems.style.maxHeight="0px";
+
+  function menuToggle(){
+    if (menuItems.style.maxHeight=="0px"){
+      menuItems.style.maxHeight="200px";
+    }else{
+      menuItems.style.maxHeight="0px";
+    }
+  }
+</script>
 
 </body>
 
