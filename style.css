@@ -229,13 +229,11 @@ h3{
 /* PORTFOLİO  */
 .port{
    display: flex;
-   flex-wrap: wrap;
-
 }
 
 .port-item{
-   width: 25%;
-   height: 300px;
+   width: 45%;
+   height: 350px;
    overflow: hidden;
    position: relative;
    transition: .5s;
